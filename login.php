@@ -34,6 +34,13 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     <div class="row">
         <div class="col-md-6 site_logo">
             <img class="img-responsive img-rounded" src="./dependencies/images/wall.jpg" alt="">
+
+            <div class="row">
+                <?php
+                $about_width = 12;
+                include './layouts/site-branding.php';
+                ?>
+            </div>
         </div>
 
         <div class="panel panel-default col-md-4 col-md-offset-1">
@@ -90,8 +97,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
                     <div class="form-group col-md-12">
                         <label class="col-form-label" for="img">Image</label>
                         <input id="img" name="img" class="form-control" type="file" accept="image/*" <?php if (!$object->id) {
-    echo 'required';
-} ?>/>
+                    echo 'required';
+                } ?>/>
                     </div>
 
                     <div class="form-group col-md-6">

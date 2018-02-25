@@ -43,6 +43,9 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <?php include './layouts/site-branding.php'; ?>
+        </div>
     </div>
 
     <?php include './layouts/footer.php'; ?>

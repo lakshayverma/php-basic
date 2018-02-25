@@ -11,7 +11,10 @@ if (!isset($current_user)) {
         <?php include 'layouts/site_dependencies.php'; ?>
     </head>
     <body>
-
+        <?php if (isset($custom_header) && $custom_header) : ?>
+        <?php else : ?>
+            <?php include 'site_header.php'; ?>
+        <?php endif; ?>
 
         <?php if ($session->message()) : ?>
             <div class="alert alert-info alert-dismissible fade in">
